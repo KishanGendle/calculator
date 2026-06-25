@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  calculator:
+    build: .
+    container_name: calculator-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
